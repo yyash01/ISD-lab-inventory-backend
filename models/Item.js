@@ -2,9 +2,6 @@ const mongoose = require("mongoose");
 
 const ItemSchema = new mongoose.Schema(
   {
-    _id: {
-      type: mongoose.Schema.Types.ObjectId,
-    },
     item_name: {
       type: String,
       required: true,
