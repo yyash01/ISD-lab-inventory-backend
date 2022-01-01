@@ -13,7 +13,6 @@ exports.registerUser = async (req, res) => {
     //create new user
     console.log(req.body.username);
     const newUser = await new User({
-      _id: new mongoose.Types.ObjectId(),
       username: req.body.username,
       password: hashedPassword,
       department: req.body.department,
